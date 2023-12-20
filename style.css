@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+@media (max-width: 1600px) {
+    body {
+        width: fit-content;
+    }
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -44,6 +50,7 @@ html{
     margin-left:800px
 }
 
+
 #navbar ul li{ 
     list-style: none;
     font-size: 1.3rem;
@@ -69,10 +76,10 @@ html{
     display: flex;
     background-image: linear-gradient(to right, rgb(1, 1, 20) , rgb(4, 67, 77));
     height: 600px;
-    color:white;
-
-   
+    color:white; 
 }
+
+
 
 .h-primary{
     font-family: "Open Sans",sans-serif;
@@ -96,8 +103,8 @@ html{
 .h-secondary li img{
    border-radius: 100px;
    animation-name: example;
-   animation-duration: 15s;
-   animation-iteration-count: 2;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
 }
 
 @keyframes example {
@@ -105,9 +112,6 @@ html{
     to {width: 600px; height: 400px;}
   }
   
-
-
-
 
 
 .h-primary li h1{
@@ -167,6 +171,7 @@ html{
   padding: 10px;
 
 }
+
 
 .grid-container > div {
 
@@ -307,23 +312,30 @@ html{
 
 /* Clients Section */
 #client-section{ 
-    position: relative;
+    margin-top: 6rem;
+    background-image: linear-gradient(to right, rgb(1, 1, 20) , rgb(4, 67, 77));
+    color: white;
+    font-weight: bold;
+
+}
+.client-class{
+    font-style:italic;
+    padding-top: 100px;
+    text-align: center;
 }
 
-#client-section::before{
- content: "";
- position: absolute;
- background: url('../bg.jpg');
- width: 100%;
- height: 100%;
- z-index: -1;
- opacity: 0.3;
-}
+
+
+
+
 
 #clients{
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 6rem;
+
 }
 
 .client-item{
@@ -331,7 +343,13 @@ html{
 }
 
 #clients img{
+    border-radius: 20px;
     height: 124px;
+}
+
+#clients img:hover{
+
+    height: 200px;
 }
 
 
